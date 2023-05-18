@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web amb Bootstrap</title>
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    img{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+</style>
+</head>
+<body>
+    <!--ALERTA-->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Presta Atenció!</strong> Aqui trobem un exemple de pagina web amb Bootstrap.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div id="navbar" class="container-fluid">
+    <a class="navbar-brand" href="#navbar">Apartats</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#sinopsis">SINOPSIS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Actors">ACTORS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#Npelicules">NºPELICULES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#album">ALBUM</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>    
+    <!--HERO1-->    
+    <div id="sinopsis" class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">SINOPSIS DE LA PELICULA</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Dom Toretto (Vin Diesel) porta una vida tranquil·la amb Letty i el seu fill, el petit Brian, però saben que el perill sempre aguaita. Aquesta vegada, aquesta amenaça obligarà Dom a enfrontar-se als pecats del seu passat si vol salvar els que més vol. L'equip es torna a reunir per impedir un complot a escala mundial, liderat per un dels assassins més perillosos i millor conductor a qui s'han enfrontat; un home que a més és el germà desaparegut de Dom, Jakob (John Sopar). Novè lliurament de la famosa franquícia.</p>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img src="imatges/FastPrincipal.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="500" height="300" loading="lazy">
+          </div>
+        </div>
+      </div>
+    <!--HERO2-->
+    <div id="Actors" class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">ACTORS</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Alguns dels actors principals que hi apareixen son: <br>Vin Diesel, Michelle Rodrigez, Jordana Brewster, Tyrese Gibson, Ludacris, Nathalie emmanuel, Charlize Theron i Jhon Cena.</p>
+        </div>
+      <!--CARRUSEL A DINS EL DIV-->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="imatges/protagonistes/vindiesel.jpeg" class="d-block w-100" alt="Vin Diesel">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/michelleRodrigez.jpeg" class="d-block w-100" alt="Michelle Rodrigez">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/jordanabrewster.jpeg" class="d-block w-100" alt="Jordana Brewster">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/tyresegibson.jpeg" class="d-block w-100" alt="Tyrese Gibson">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/ludacris.jpeg" class="d-block w-100" alt="Ludacris">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/nathalieemmanuel.jpeg" class="d-block w-100" alt="Nathalie emmanuel">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/charlizetheron.jpeg" class="d-block w-100" alt="Charlize Theron">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/protagonistes/jhoncena.jpeg" class="d-block w-100" alt="Jhon Cena">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--HERO3-->
+    <div id="Npelicules" class="px-4 pt-5 my-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold">Nº DE PELICULES</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">Aquesta pelicula no es l'unica, ja que aquesta pelicula hi es la nº9. Es a dir, en total hi tenim una saga, la cual encara no hi ha finalitzat ja que en aquest moment el dia 19/05/2023 i han dit que i surt la nº10 als cines.<br> Les que hi trobem fins aquest moment son: The Fast And The Furious, 2 Fast 2 Furious, The Fast and the Furious: Tokyo Drift, Fast & Furious: Aún más rápido, Fast Five (The Fast and the Furious 5), Fast & Furious 6, Fast & Furious 7, Fast & Furious 8 (The Fate of the Furious) i Fast & Furious 9</p>
+        </div>
+      <!--CARRUSEL A DINS EL DIV-->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imatges/imatgesPrincipalsPelicules/fast1.jpeg" class="d-block w-100" alt="Fast1">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast2.jpeg" class="d-block w-100" alt="Fast2">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast3.jpeg" class="d-block w-100" alt="fast3">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast4.jpeg" class="d-block w-100" alt="Fast4">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast5.jpeg" class="d-block w-100" alt="Fast5">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast6.jpeg" class="d-block w-100" alt="Fast6">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast7.jpeg" class="d-block w-100" alt="Fast7">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast8.jpeg" class="d-block w-100" alt="Fast8">
+          </div>
+          <div class="carousel-item">
+            <img src="imatges/imatgesPrincipalsPelicules/fast9.jpeg" class="d-block w-100" alt="Fast9">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--ALBUM-->
+    <main>
+
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">ALBUM D'IMATGES</h1>
+              <p class="lead text-muted"></p>
+            </div>
+          </div>
+        </section>
+      
+        <div id="album" class="album py-5 bg-light">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imatges/album/un.jpeg" alt="1">
+                  <div class="card-body">
+                    <p class="card-text">Aqui hi trobem algunes de les imatges extretes de les pelicules.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imatges/album/dos.jpeg" alt="1">
+                  <div class="card-body">
+                    <p class="card-text">Aqui hi trobem algunes de les imatges extretes de les pelicules.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="imatges/album/tres.jpeg" alt="1">
+                  <div class="card-body">
+                    <p class="card-text">Aqui hi trobem algunes de les imatges extretes de les pelicules.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      </div>
+                      <small class="text-muted">9 mins</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </main>
+      <!--Footer-->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 Company, Inc</p>
+      
+          
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#navbar" class="nav-link px-2 text-muted">Apartats</a></li>
+            <li class="nav-item"><a href="#sinopsis" class="nav-link px-2 text-muted">Sinposis</a></li>
+            <li class="nav-item"><a href="#Actors" class="nav-link px-2 text-muted">Actors</a></li>
+            <li class="nav-item"><a href="#Npelicules" class="nav-link px-2 text-muted">NºPELICULES</a></li>
+            <li class="nav-item"><a href="#album" class="nav-link px-2 text-muted">Album</a></li>
+          </ul>
+        </footer>
+        <!---->
+      </div>
+</body>
+</html>
